@@ -1,0 +1,110 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_checked="true">
+        <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_029" android:alpha="?disabledAlpha" />
+    </item>
+    <item android:state_enabled="false">
+        <bitmap android:src="@drawable/btn_radio_disabled_xui" android:alpha="?disabledAlpha" />
+    </item>
+    <item android:state_checked="true" android:id="@id/on">
+        <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_029" />
+    </item>
+    <item android:id="@id/off">
+        <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_000" />
+    </item>
+    <transition android:toId="@id/on" android:fromId="@id/off" android:reversible="true">
+        <animation-list>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_000" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_001" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_002" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_003" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_004" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_005" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_006" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_007" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_008" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_009" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_010" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_011" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_012" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_013" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_014" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_015" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_016" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_017" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_018" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_019" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_020" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_021" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_022" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_023" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_024" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_025" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_026" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_027" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_028" />
+            </item>
+            <item android:duration="13">
+                <bitmap android:src="@drawable/btn_radio_to_on_mtrl_xui_029" />
+            </item>
+        </animation-list>
+    </transition>
+</animated-selector>

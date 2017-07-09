@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <LinearLayout android:layout_width="wrap_content" android:layout_height="fill_parent">
+        <ImageView android:id="@id/usb_notification_image" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginLeft="11.0dip" android:layout_marginRight="11.0dip" android:src="@drawable/stat_sys_data_usb" />
+    </LinearLayout>
+    <RelativeLayout android:orientation="horizontal" android:layout_width="fill_parent" android:layout_height="wrap_content">
+        <LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="fill_parent" android:layout_marginTop="12.0dip" android:layout_alignParentLeft="true">
+            <TextView android:textSize="15.0sp" android:id="@id/usb_notification_title" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+            <TextView android:textSize="12.0sp" android:id="@id/usb_notification_summary" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+        </LinearLayout>
+        <LinearLayout android:orientation="horizontal" android:background="@drawable/xui_usb_notification_button_shape" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/xui_usb_notification_button_divider" android:layout_alignParentRight="true" android:layout_centerVertical="true" android:showDividers="middle">
+            <Button android:textSize="11.0sp" android:textColor="@color/usb_notification_font_default_color" android:id="@id/usb_notification_file" android:background="@drawable/xui_usb_notification_file_button_default_shape_selector" android:layout_width="@dimen/usb_notification_button_width" android:layout_height="@dimen/usb_notification_button_height" android:text="@string/usb_notification_file_name" />
+            <Button android:textSize="11.0sp" android:textColor="@color/usb_notification_font_selected_color" android:id="@id/usb_notification_photo" android:background="@drawable/xui_usb_notification_photo_button_selected_shape_selector" android:layout_width="@dimen/usb_notification_button_width" android:layout_height="@dimen/usb_notification_button_height" android:text="@string/usb_notification_photo_name" />
+        </LinearLayout>
+    </RelativeLayout>
+</LinearLayout>

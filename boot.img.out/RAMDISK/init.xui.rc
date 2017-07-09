@@ -1,0 +1,18 @@
+# lenovo nac_server loader begin
+service nac_server /system/bin/nac_server
+    class main
+    user root
+# lenovo nac_server loader end
+
+# lenovo nds loader begin
+service nds /system/bin/nds
+    class main
+    user root
+# lenovo nds loader end
+
+#for xui theme test, TBD
+service cpthemeicon /system/bin/cptheme.sh
+    disabled
+    oneshot
+    user root
+

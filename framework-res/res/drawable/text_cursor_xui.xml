@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="8.0dip" android:insetBottom="8.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape>
+        <solid android:color="@color/text_cursor_xui" />
+        <size android:height="@dimen/text_cursor_height_xui" />
+        <size android:width="@dimen/text_cursor_width_xui" />
+    </shape>
+</inset>

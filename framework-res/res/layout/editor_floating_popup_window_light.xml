@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/editor_floating_window_menu_header" android:visibility="gone" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editor_floating_popup_window_bottom_boundary_up_light" />
+    <SlideLinearLayoutEx android:id="@id/editor_floating_window_menu_container" android:layout_width="wrap_content" android:layout_height="wrap_content" />
+    <ImageView android:layout_gravity="center_horizontal" android:id="@id/editor_floating_window_menu_footer" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editor_floating_popup_window_bottom_boundary_down_light" />
+</LinearLayout>

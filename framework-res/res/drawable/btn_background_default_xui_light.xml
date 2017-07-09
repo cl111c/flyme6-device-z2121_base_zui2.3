@@ -1,0 +1,28 @@
+<?xml version="1.0" encoding="utf-8"?>
+<selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/common_corner_radius_xui" />
+            <solid android:color="@color/button_background_disabled_xui_light" />
+            <padding android:left="@dimen/button_padding_horizontal_xui" android:top="@dimen/button_padding_vertical_xui" android:right="@dimen/button_padding_horizontal_xui" android:bottom="@dimen/button_padding_vertical_xui" />
+            <stroke android:width="@dimen/divider_width_xui" android:color="@color/button_rect_stroke_disabled_xui_light" android:dashGap="0.0dip" />
+        </shape>
+    </item>
+    <item android:state_pressed="true">
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/common_corner_radius_xui" />
+            <solid android:color="@color/button_background_pressed_xui_light" />
+            <padding android:left="@dimen/button_padding_horizontal_xui" android:top="@dimen/button_padding_vertical_xui" android:right="@dimen/button_padding_horizontal_xui" android:bottom="@dimen/button_padding_vertical_xui" />
+            <stroke android:width="@dimen/divider_width_xui" android:color="@color/button_rect_stroke_pressed_xui_light" android:dashGap="0.0dip" />
+        </shape>
+    </item>
+    <item>
+        <shape android:shape="rectangle">
+            <corners android:radius="@dimen/common_corner_radius_xui" />
+            <solid android:color="@color/button_background_xui_light" />
+            <padding android:left="@dimen/button_padding_horizontal_xui" android:top="@dimen/button_padding_vertical_xui" android:right="@dimen/button_padding_horizontal_xui" android:bottom="@dimen/button_padding_vertical_xui" />
+            <stroke android:width="@dimen/divider_width_xui" android:color="@color/button_rect_stroke_xui_light" android:dashGap="0.0dip" />
+        </shape>
+    </item>
+</selector>

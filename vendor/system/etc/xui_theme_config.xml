@@ -1,0 +1,8 @@
+<?xml version='1.0' encoding='utf-8' standalone='yes' ?>
+
+
+<config versioncode="1" >
+
+<category name="launcher" defResId="1" file="/system/etc/res.zip" />
+
+</config>

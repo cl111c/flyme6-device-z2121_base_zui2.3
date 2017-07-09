@@ -1,0 +1,19 @@
+#add for aplog service
+service tcplog /system/xbin/tcpdump -s 1500 -w /local/log/aplog/tcp -C 20 -W 6 -Z root -i any host not ::1 and host not ::ffff:127.0.0.1 and host not 127.0.0.1
+    class main
+    disabled
+    oneshot
+
+service startmdmlog /system/bin/qxdmlog.sh start
+    class main
+    disabled
+    oneshot
+
+service stopmdmlog /system/bin/qxdmlog.sh
+    class main
+    disabled
+    oneshot
+
+service domdmlog /system/bin/domdmlog.sh
+    class late_start
+

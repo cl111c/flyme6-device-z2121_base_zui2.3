@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout android:gravity="center_horizontal" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <View android:gravity="center" android:id="@id/numberpicker" android:background="@null" android:layout_width="wrap_content" android:layout_height="@dimen/number_picker_x_height" android:singleLine="true" />
+    <View android:background="@drawable/number_picker_top_cover_light" android:layout_width="fill_parent" android:layout_height="@dimen/number_picker_x_cover_height" android:layout_alignTop="@id/numberpicker" />
+    <View android:background="@drawable/number_picker_bottom_cover_light" android:layout_width="fill_parent" android:layout_height="@dimen/number_picker_x_cover_height" android:layout_alignBottom="@id/numberpicker" />
+</RelativeLayout>

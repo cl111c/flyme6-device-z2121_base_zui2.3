@@ -1,0 +1,159 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:id="@id/off">
+        <nine-patch android:gravity="center" android:src="@drawable/switch_thumb_disabled_xui_light" />
+    </item>
+    <item android:state_checked="true" android:id="@id/on">
+        <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00022_light" />
+    </item>
+    <item android:id="@id/off">
+        <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00000_light" />
+    </item>
+    <transition android:toId="@id/on" android:fromId="@id/off">
+        <animation-list>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00000_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00001_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00002_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00003_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00004_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00005_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00006_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00007_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00008_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00009_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00010_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00011_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00012_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00013_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00014_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00015_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00016_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00017_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00018_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00019_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00020_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00021_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00022_light" />
+            </item>
+        </animation-list>
+    </transition>
+    <transition android:toId="@id/off" android:fromId="@id/on">
+        <animation-list>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00022_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00021_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00020_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00019_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00018_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00017_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00016_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00015_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00014_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00013_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00012_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00011_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00010_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00009_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00008_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00007_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00006_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00005_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00004_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00003_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00002_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00001_light" />
+            </item>
+            <item android:duration="13">
+                <nine-patch android:gravity="center" android:src="@drawable/btn_switch_to_on_mtrl_xui_00000_light" />
+            </item>
+        </animation-list>
+    </transition>
+</animated-selector>

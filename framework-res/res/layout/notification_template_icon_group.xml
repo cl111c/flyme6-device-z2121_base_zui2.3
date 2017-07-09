@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:id="@id/icon_group" android:layout_width="@dimen/notification_large_icon_width" android:layout_height="@dimen/notification_large_icon_height"
+  xmlns:android="http://schemas.android.com/apk/res/android"
+  xmlns:internal="http://schemas.android.com/apk/prv/res/android">
+    <ImageView android:layout_gravity="center" android:id="@id/icon" android:layout_width="@dimen/notification_large_left_icon_width" android:layout_height="@dimen/notification_large_left_icon_height" android:scaleType="centerInside" />
+    <ImageView android:layout_gravity="end|bottom|center" android:id="@id/right_icon" android:padding="3.0dip" android:visibility="gone" android:layout_width="16.0dip" android:layout_height="16.0dip" android:layout_marginBottom="@dimen/notification_large_left_icon_top_bottom_margin" android:scaleType="centerInside" android:layout_marginEnd="@dimen/notification_large_left_icon_top_bottom_margin" />
+</FrameLayout>

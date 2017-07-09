@@ -1,0 +1,6 @@
+<?xml version="1.0" encoding="utf-8"?>
+<shape android:shape="rectangle"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <corners android:radius="@dimen/popup_window_corner_radius_xui" />
+    <solid android:color="@color/dialog_background_xui_light" />
+</shape>

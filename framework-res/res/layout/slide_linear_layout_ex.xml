@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:layout_gravity="center_horizontal" android:id="@id/root_container" android:layout_width="wrap_content" android:layout_height="wrap_content"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <ImageView android:id="@id/slide_left_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editor_floating_popup_window_left_boundary_selector" android:contentDescription="@null" />
+    <SlideLinearLayout android:layout_gravity="center_horizontal" android:id="@id/slideLayout" android:background="@drawable/editor_floating_popup_window_background" android:layout_width="wrap_content" android:layout_height="wrap_content" android:divider="@drawable/editor_floating_popup_item_divider" android:showDividers="middle" />
+    <ImageView android:id="@id/slide_right_drawable" android:layout_width="wrap_content" android:layout_height="wrap_content" android:src="@drawable/editor_floating_popup_window_right_boundary_selector" android:contentDescription="@null" />
+</LinearLayout>

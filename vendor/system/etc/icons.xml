@@ -1,0 +1,113 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <!-- browser start-->
+    <drawable name="com_lenovo_browser__ic_launcher_browser">@drawable/com_lenovo_browser__ic_launcher_browser</drawable>
+    <!-- browser end-->
+
+    <!-- calculator start-->
+    <drawable name="com_zui_calculator__ic_launcher_calculator">@drawable/com_zui_calculator__ic_launcher_calculator</drawable>
+    <!-- calculator end-->
+
+    <!-- calendar start-->
+    <drawable name="com_zui_calendar__ic_launcher">@drawable/com_zui_calendar__ic_launcher</drawable>
+    <!-- calendar end-->
+
+    <!-- camera start-->
+    <drawable name="com_zui_camera__logo_camera_color_44in48dp">@drawable/com_zui_camera__logo_camera_color_44in48dp</drawable>
+    <!-- camera end-->
+
+    <!-- calllog start-->
+    <drawable name="com_zui_contacts__ic_launcher_calllog">@drawable/com_zui_contacts__ic_launcher_calllog</drawable>
+     <!-- calllog end-->
+
+    <!-- contact start-->
+    <drawable name="com_zui_contacts__ic_launcher_contacts">@drawable/com_zui_contacts__ic_launcher_contacts</drawable>
+    <!-- contact end-->
+
+    <!-- dialer start-->
+    <drawable name="com_zui_contacts__ic_launcher_phone">@drawable/com_zui_contacts__ic_launcher_phone</drawable>
+    <drawable name="com_zui_contacts__logo_quick_contacts_dialer_color_44in48dp">@drawable/com_zui_contacts__logo_quick_contacts_dialer_color_44in48dp</drawable>
+    <!-- dialer end-->
+
+    <!-- alarm start-->
+     <drawable name="com_zui_alarmclock__ic_launcher_alarmclock">@drawable/com_zui_alarmclock__ic_launcher_alarmclock</drawable>
+     <drawable name="com_zui_deskclock__ic_launcher_alarmclock">@drawable/com_zui_deskclock__ic_launcher_alarmclock</drawable>
+    <!-- alarm end-->
+
+    <!-- eamil start-->
+    <drawable name="com_netease_mobimail_zui__ic_launcher">@drawable/com_netease_mobimail_zui__ic_launcher</drawable>
+    <drawable name="com_android_email__ic_launcher_mail">@drawable/com_android_email__ic_launcher_mail</drawable>
+    <drawable name="com_android_email__email_widget_preview">@drawable/com_android_email__email_widget_preview</drawable>
+    <!-- email end-->
+
+    <!-- gallery start-->
+    <drawable name="com_zui_gallery__ic_launcher_gallery">@drawable/com_zui_gallery__ic_launcher_gallery</drawable>
+    <!-- gallery end-->
+
+    <!-- sms/mms start-->
+    <drawable name="com_zui_mms__ic_launcher_smsmms">@drawable/com_zui_mms__ic_launcher_smsmms</drawable>
+    <!-- sms/mms end-->
+
+    <!-- music start-->
+    <drawable name="com_zui_music__app_music_logo">@drawable/com_zui_music__app_music_logo</drawable>
+    <!-- music end-->
+
+    <!-- video start-->
+    <drawable name="com_android_music__app_video">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_android_videoplayer__icon">@drawable/com_android_music__app_video</drawable>
+    <drawable name="com_qiyi_video__icon">@drawable/com_qiyi_video__icon</drawable>
+    <!-- video end-->
+
+    <!-- search start-->
+    <drawable name="com_android_quicksearchbox__search_app_icon">@drawable/com_android_quicksearchbox__search_app_icon</drawable>
+    <!-- search end-->
+
+    <!-- settings start-->
+    <drawable name="com_android_settings__ic_launcher_settings">@drawable/com_android_settings__ic_launcher_settings</drawable>
+    <!-- settings end-->
+
+    <!-- soundrecorder start-->
+    <drawable name="com_zui_recorder__ic_launcher_soundrecorder">@drawable/com_zui_recorder__ic_launcher_soundrecorder</drawable>
+    <!-- soundrecorder end-->
+
+    <!-- filebrowser start-->
+    <drawable name="com_zui_filemanager__ic_launcher">@drawable/com_zui_filemanager__ic_launcher</drawable>
+    <!-- filebrowser end-->
+
+    <!-- notes start-->
+    <!-- notes end-->
+
+    <!-- securitycenter start-->
+    <drawable name="com_zui_safecenter__icon_launcher">@drawable/com_zui_safecenter__icon_launcher</drawable>
+    <!-- securitycenter end-->
+
+    <!-- FMRadio start-->
+    <!-- FMRadio end-->
+
+    <!-- SIM app start-->
+    <drawable name="com_android_stk__ic_launcher_sim1_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>
+    <drawable name="com_android_stk__ic_launcher_sim_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>
+    <drawable name="com_android_stk__ic_launcher_sim2_toolkit">@drawable/com_android_stk__ic_launcher_sim1_toolkit</drawable>
+    <!-- SIM app end-->
+
+    <!-- download start-->
+    <drawable name="com_android_providers_downloads_ui__ic_launcher_download">@drawable/com_android_providers_downloads_ui__ic_launcher_download</drawable>
+    <!-- download end-->
+    
+    <!-- appstore start-->
+    <drawable name="com_lenovo_leos_appstore__default_icon">@drawable/com_lenovo_leos_appstore__default_icon</drawable>
+    <!-- appstore end-->
+    
+    <!-- ota start-->
+    <drawable name="com_zui_ota__icon">@drawable/com_zui_ota__icon</drawable>
+    <!-- ota end-->
+    
+    <!-- compass start-->
+    <drawable name="com_zui_compass__ic_launcher">@drawable/com_zui_compass__ic_launcher</drawable>
+    <!-- compass end-->
+    
+    <!-- weather start-->
+    <drawable name="sina_mobile_tianqitong__widget_5x2_preview">@drawable/sina_mobile_tianqitong__widget_5x2_preview</drawable>
+    <!-- weather end-->
+</resources>

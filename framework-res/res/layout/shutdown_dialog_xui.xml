@@ -1,0 +1,19 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout android:layout_width="fill_parent" android:layout_height="fill_parent"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <RelativeLayout android:id="@id/shutdown_dialog_container" android:layout_width="fill_parent" android:layout_height="fill_parent">
+        <View android:id="@id/shutdown_dialog_left_padding" android:background="#66000000" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_alignParentStart="true" />
+        <View android:id="@id/shutdown_dialog_right_padding" android:background="#66000000" android:layout_width="52.0dip" android:layout_height="fill_parent" android:layout_alignParentEnd="true" />
+        <LinearLayout android:gravity="center" android:orientation="horizontal" android:id="@id/shutdown_dialog_middle_region" android:background="#66000000" android:layout_width="fill_parent" android:layout_height="fill_parent" android:baselineAligned="false" android:layout_toStartOf="@id/shutdown_dialog_right_padding" android:layout_toEndOf="@id/shutdown_dialog_left_padding">
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shutdown_dialog_reboot_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/shutdown_dialog_reboot_icon" android:background="@drawable/shutdown_dialog_icon_reboot_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:scaleType="center" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/shutdown_dialog_title_default_color" android:id="@id/shutdown_dialog_reboot_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/shutdown_dialog_reboot" />
+            </LinearLayout>
+            <LinearLayout android:gravity="center" android:orientation="vertical" android:id="@id/shutdown_dialog_shutdown_container" android:layout_width="0.0dip" android:layout_height="wrap_content" android:layout_weight="1.0">
+                <ImageView android:layout_gravity="center" android:id="@id/shutdown_dialog_shutdown_icon" android:background="@drawable/shutdown_dialog_icon_shutdown_selector" android:layout_width="62.0dip" android:layout_height="62.0dip" android:scaleType="center" android:contentDescription="@null" />
+                <TextView android:textSize="14.0sp" android:textColor="@color/shutdown_dialog_title_default_color" android:id="@id/shutdown_dialog_shutdown_title" android:layout_width="wrap_content" android:layout_height="wrap_content" android:layout_marginTop="10.0dip" android:text="@string/shutdown_dialog_shutdown" />
+            </LinearLayout>
+        </LinearLayout>
+    </RelativeLayout>
+    <View android:id="@id/anti_false_touch" android:background="#99000000" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="fill_parent" />
+</FrameLayout>

@@ -1,0 +1,9 @@
+<?xml version="1.0" encoding="utf-8"?>
+<inset android:insetTop="2.0px" android:insetBottom="2.0px"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <shape android:shape="rectangle"
+      xmlns:android="http://schemas.android.com/apk/res/android">
+        <size android:height="@dimen/usb_notification_button_height" android:width="2.0px" />
+        <solid android:color="@color/usb_notification_button_stroke_color" />
+    </shape>
+</inset>

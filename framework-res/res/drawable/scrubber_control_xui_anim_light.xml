@@ -1,0 +1,47 @@
+<?xml version="1.0" encoding="utf-8"?>
+<animated-selector android:constantSize="true"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <item android:state_enabled="false" android:state_pressed="true">
+        <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_000_light" />
+    </item>
+    <item android:state_enabled="false">
+        <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_000_light" />
+    </item>
+    <item android:state_pressed="true" android:id="@id/pressed">
+        <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_008_light" />
+    </item>
+    <item android:id="@id/not_pressed">
+        <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_000_light" />
+    </item>
+    <transition android:toId="@id/pressed" android:fromId="@id/not_pressed" android:reversible="true">
+        <animation-list>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_000_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_001_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_002_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_003_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_004_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_005_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_006_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_007_light" />
+            </item>
+            <item android:duration="15">
+                <bitmap android:gravity="center" android:src="@drawable/scrubber_control_to_pressed_mtrl_xui_008_light" />
+            </item>
+        </animation-list>
+    </transition>
+</animated-selector>

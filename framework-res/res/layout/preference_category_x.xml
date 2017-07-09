@@ -1,0 +1,7 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout android:orientation="vertical" android:background="@drawable/preference_category_x_bg" android:layout_width="fill_parent" android:layout_height="wrap_content" android:paddingStart="16.0dip" android:paddingEnd="16.0dip"
+  xmlns:android="http://schemas.android.com/apk/res/android">
+    <TextView android:textSize="@dimen/preference_category_x_upper_text_size" android:textColor="@color/preference_category_x_upper_text" android:ellipsize="end" android:gravity="center_vertical" android:id="@id/summary" android:paddingTop="6.0dip" android:paddingBottom="6.0dip" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/preference_category_x_upper_height" android:maxLines="2" />
+    <View android:id="@id/spacer" android:background="@color/transparent" android:visibility="gone" android:layout_width="fill_parent" android:layout_height="@dimen/preference_category_x_space_height" />
+    <TextView android:textSize="@dimen/preference_category_x_lower_text_size" android:textColor="@color/preference_category_x_lower_text" android:gravity="center_vertical" android:id="@id/title" android:layout_width="fill_parent" android:layout_height="wrap_content" android:minHeight="@dimen/preference_category_x_lower_height" android:maxLines="1" />
+</LinearLayout>
