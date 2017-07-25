@@ -1146,6 +1146,7 @@ system/fonts/Roboto-ThinItalic.ttf 0 0 644 selabel=u:object_r:system_file:s0 cap
 system/fonts/Roboto-Thin.ttf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/fonts/ZUKChinese.ttf 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework 0 0 755 selabel=u:object_r:system_file:s0 capabilities=0x0
+system/rfs 0 0 644 selabel=u:object_r:rfs_system_file:s0 capabilities=0x0
 system/framework/am.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework/android.test.runner.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0
 system/framework/apache-xml.jar 0 0 644 selabel=u:object_r:system_file:s0 capabilities=0x0

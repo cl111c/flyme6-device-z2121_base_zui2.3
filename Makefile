@@ -54,7 +54,7 @@ vendor_modify_images := boot
 # The default value is Bluetooth.
 # You can configure the apk name in the vendor/system/app or vendor/system/priv-app directory.
 #-----------------------------------------------------------------------------
-vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell AntHalService datastatusnotification QtiGbaAuthService QtiTelephonyService SdcardOperate shutdownlistener telresources TimeService XuiZBridge XuiZRoaming XuiZService ZUKFidoAsm AuService CNEService com.qualcomm.location FIDOUAFClient LSF-User-Phone qcrilmsgtunnel QtiTetherService XuiHomeSettings
+vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyChain PrintSpooler Stk UserDictionaryProvider BackupRestoreConfirmation DefaultContainerService ExternalStorageProvider FusedLocation InputDevices ProxyHandler SharedStorageBackup Shell AntHalService datastatusnotification QtiGbaAuthService QtiTelephonyService SdcardOperate shutdownlistener telresources TimeService XuiZBridge XuiZRoaming XuiZService ZUKFidoAsm AuService CNEService com.qualcomm.location FIDOUAFClient LSF-User-Phone qcrilmsgtunnel QtiTetherService XuiHomeSettings XuiUHealth
 
 ##############################################################################
 # The value decides which vendor apk you want to modify.
@@ -72,7 +72,7 @@ vendor_saved_apps := Bluetooth BluetoothExt BluetoothMidiService HTMLViewer KeyC
 # You need to decode android.policy.jar to the project directory (use apktool d android.policy.jar) first,
 # and then you can make it by:   make android.policy
 #-----------------------------------------------------------------------------
-vendor_modify_jars := com.qti.dpmframework framework oem-services qti-telephony-common services telephony-common wifi-service
+vendor_modify_jars := framework services telephony-common wifi-service
 
 ##############################################################################
 # The value decides which board system directory you want to save.
@@ -105,7 +105,7 @@ vendor_modify_jars := com.qti.dpmframework framework oem-services qti-telephony-
 # The command idtoname how to use: first use "apktool d source/system/framework/framework-res.apk other/TMP/framework-res",
 # and then use "idtoname other/TMP/framework-res/res/values/public_master.xml XXXX/smali"(XXXX is the directory where you decode board system apk).
 #-----------------------------------------------------------------------------
-#board_modify_apps := TeleService
+board_modify_apps := TeleService
 
 ##############################################################################
 # The value decides which jar you want to modify, when the jar is based on the board framework jar.

@@ -11,6 +11,7 @@
         Landroid/provider/Settings$Secure;,
         Landroid/provider/Settings$System;,
         Landroid/provider/Settings$NameValueCache;,
+        Landroid/provider/Settings$ShareList;,
         Landroid/provider/Settings$NameValueTable;,
         Landroid/provider/Settings$SettingNotFoundException;
     }
@@ -585,6 +586,19 @@
 
     .line 8739
     :pswitch_2
+
+    invoke-static/range {p4 .. p4}, Landroid/provider/Settings;->isFlymePermissionGranted(I)Z
+
+    move-result v8
+
+    if-eqz v8, :cond_flyme_0
+
+    const/4 v8, 0x1
+
+    return v8
+
+    :cond_flyme_0
+
     move-object v1, p5
 
     .local v1, "arr$":[Ljava/lang/String;
@@ -745,6 +759,31 @@
     invoke-static/range {v0 .. v6}, Landroid/provider/Settings;->isCallingPackageAllowedToPerformAppOpsProtectedOperation(Landroid/content/Context;ILjava/lang/String;ZI[Ljava/lang/String;Z)Z
 
     move-result v0
+
+    return v0
+.end method
+
+.method private static isFlymePermissionGranted(I)Z
+    .locals 1
+    .param p0, "appOpsOpCode"    # I
+
+    .prologue
+    const/16 v0, 0x17
+
+    if-ne p0, v0, :cond_0
+
+    invoke-static {v0}, Lmeizu/security/FlymePermissionManager;->isFlymePermissionGranted(I)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_0
+
+    const/4 v0, 0x1
+
+    return v0
+
+    :cond_0
+    const/4 v0, 0x0
 
     return v0
 .end method

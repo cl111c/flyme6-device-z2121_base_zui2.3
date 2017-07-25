@@ -25,6 +25,7 @@
         Landroid/content/pm/PackageParser$PackageLite;,
         Landroid/content/pm/PackageParser$ParseComponentArgs;,
         Landroid/content/pm/PackageParser$ParsePackageItemArgs;,
+        Landroid/content/pm/PackageParser$FlymeInjector;,
         Landroid/content/pm/PackageParser$SplitPermissionInfo;,
         Landroid/content/pm/PackageParser$NewPermissionInfo;
     }
@@ -4759,6 +4760,10 @@
 
     iput v3, v2, Landroid/content/pm/ActivityInfo;->uiOptions:I
 
+    move-object/from16 v0, v24
+
+    invoke-static {v14, v0}, Landroid/content/pm/PackageParser$FlymeInjector;->parseAccessArgsFromResource(Landroid/content/pm/PackageParser$Activity;Landroid/content/res/TypedArray;)V
+
     .line 3282
     const/16 v2, 0x1b
 
@@ -5693,27 +5698,26 @@
 
     invoke-static {v2, v3}, Landroid/util/Slog;->w(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 3423
     iget-object v2, v14, Landroid/content/pm/PackageParser$Activity;->info:Landroid/content/pm/ActivityInfo;
 
     const/4 v3, 0x0
 
     iput-boolean v3, v2, Landroid/content/pm/ActivityInfo;->exported:Z
 
-    .line 3424
     const/16 v25, 0x1
 
     goto/16 :goto_6
 
-    .line 3444
     :cond_20
     invoke-interface/range {p3 .. p3}, Lorg/xmlpull/v1/XmlPullParser;->getDepth()I
 
     move-result v21
 
-    .line 3447
     .local v21, "outerDepth":I
     :cond_21
+    
+    invoke-static/range {v14 .. v14}, Landroid/content/pm/PackageParser$FlymeInjector;->parseAccessMetaFromResource(Landroid/content/pm/PackageParser$Activity;)V
+
     :goto_8
     invoke-interface/range {p3 .. p3}, Lorg/xmlpull/v1/XmlPullParser;->next()I
 
@@ -6897,6 +6901,12 @@
     move-object/from16 v0, v17
 
     iput v2, v0, Landroid/content/pm/ActivityInfo;->maxRecents:I
+
+    move-object/from16 v0, v17
+
+    move-object/from16 v1, v25
+
+    invoke-static {v0, v1}, Landroid/content/pm/PackageParser$FlymeInjector;->copyAccessArgs(Landroid/content/pm/ActivityInfo;Landroid/content/pm/PackageParser$Activity;)V
 
     .line 3636
     new-instance v15, Landroid/content/pm/PackageParser$Activity;
@@ -11953,7 +11963,7 @@
 
     .line 2624
     .local v25, "pkgName":Ljava/lang/String;
-    const v3, 0x107000b
+    const v3, #android:array@non_themeable_packages#t
 
     move-object/from16 v0, p2
 
@@ -22334,20 +22344,29 @@
     .param p2, "requireFilename"    # Z
 
     .prologue
-    .line 1326
+
+    invoke-static/range {p0 .. p0}, Landroid/content/pm/PackageParser$FlymeInjector;->validateName(Ljava/lang/String;)Z
+
+    move-result v0
+
+    if-eqz v0, :cond_flyme_0
+
+    const/4 v0, 0x0
+
+    return-object v0
+
+    :cond_flyme_0
+
     invoke-virtual {p0}, Ljava/lang/String;->length()I
 
     move-result v0
 
-    .line 1327
     .local v0, "N":I
     const/4 v3, 0x0
 
-    .line 1328
     .local v3, "hasSep":Z
     const/4 v2, 0x1
 
-    .line 1329
     .local v2, "front":Z
     const/4 v4, 0x0
 

@@ -6,6 +6,7 @@
 # annotations
 .annotation system Ldalvik/annotation/MemberClasses;
     value = {
+        Lcom/android/server/power/ShutdownThread$FlymeInjector;,
         Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;
     }
 .end annotation
@@ -263,7 +264,7 @@
 
     move-result-object v3
 
-    const v4, 0x104005a
+    const v4, #android:string@config_UpgradeType#t
 
     invoke-virtual {v3, v4}, Landroid/content/res/Resources;->getString(I)Ljava/lang/String;
 
@@ -363,7 +364,7 @@
 
     .line 368
     .local v1, "pd":Lzui/app/ZuiShutdownProgressDialog;
-    invoke-virtual {v1}, Lzui/app/ZuiShutdownProgressDialog;->show()V
+    invoke-static {p0}, Lcom/android/server/power/ShutdownThread$FlymeInjector;->showShutDownAnimation(Landroid/content/Context;)V
 
     .line 370
     sget-object v3, Lcom/android/server/power/ShutdownThread;->sInstance:Lcom/android/server/power/ShutdownThread;
@@ -742,24 +743,19 @@
     .param p0, "context"    # Landroid/content/Context;
 
     .prologue
-    .line 834
     const/4 v0, 0x0
 
-    .line 835
     .local v0, "uiContext":Landroid/content/Context;
     if-eqz p0, :cond_0
 
-    .line 836
     invoke-static {p0}, Landroid/content/pm/ThemeUtils;->createUiContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v0
 
-    .line 837
-    const v1, 0x103013f
+    const v1, #android:style@Theme.DeviceDefault.Light.DarkActionBar#t
 
     invoke-virtual {v0, v1}, Landroid/content/Context;->setTheme(I)V
 
-    .line 839
     :cond_0
     if-eqz v0, :cond_1
 
@@ -1103,7 +1099,7 @@
 
     move-result-object v8
 
-    const v9, 0x107003c
+    const v9, #android:array@config_globalActionsList#t
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getStringArray(I)[Ljava/lang/String;
 
@@ -1139,7 +1135,7 @@
 
     move-result-object v8
 
-    const v9, 0x10e004a
+    const v9, #android:integer@config_longPressOnPowerBehavior#t
 
     invoke-virtual {v8, v9}, Landroid/content/res/Resources;->getInteger(I)I
 
@@ -1151,7 +1147,7 @@
 
     if-eqz v8, :cond_6
 
-    const v5, 0x104011b
+    const v5, #android:string@reboot_safemode_confirm#t
 
     .line 180
     .local v5, "resourceId":I
@@ -1162,10 +1158,8 @@
 
     if-nez v8, :cond_2
 
-    .line 181
-    const v5, 0x104011d
+    const v5, #android:string@reboot_confirm#t
 
-    .line 184
     :cond_2
     const-string v8, "ShutdownThread"
 
@@ -1189,47 +1183,39 @@
 
     invoke-static {v8, v9}, Landroid/util/Log;->d(Ljava/lang/String;Ljava/lang/String;)I
 
-    .line 186
     if-eqz p1, :cond_9
 
-    .line 187
     new-instance v0, Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;
 
     invoke-direct {v0, p0}, Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;-><init>(Landroid/content/Context;)V
 
-    .line 189
     .local v0, "closer":Lcom/android/server/power/ShutdownThread$CloseDialogReceiver;
     invoke-static {p0}, Lcom/android/server/power/ShutdownThread;->getUiContext(Landroid/content/Context;)Landroid/content/Context;
 
     move-result-object v7
 
-    .line 191
     .local v7, "uiContext":Landroid/content/Context;
     sget-object v8, Lcom/android/server/power/ShutdownThread;->sConfirmDialog:Landroid/app/AlertDialog;
 
     if-eqz v8, :cond_3
 
-    .line 192
     sget-object v8, Lcom/android/server/power/ShutdownThread;->sConfirmDialog:Landroid/app/AlertDialog;
 
     invoke-virtual {v8}, Landroid/app/AlertDialog;->dismiss()V
 
-    .line 209
     :cond_3
     sget-boolean v8, Lcom/android/server/power/ShutdownThread;->mReboot:Z
 
     if-eqz v8, :cond_4
 
-    .line 210
-    const v5, 0x104011d
+    const v5, #android:string@reboot_confirm#t
 
-    .line 212
     :cond_4
     sget-boolean v8, Lcom/android/server/power/ShutdownThread;->mReboot:Z
 
     if-eqz v8, :cond_8
 
-    const v4, 0x10405ed
+    const v4, #android:string@shutdown_dialog_reboot#t
 
     .line 215
     .local v4, "positiveTitle":I
@@ -1250,7 +1236,7 @@
 
     move-result-object v8
 
-    const v9, 0x1040009
+    const v9, #android:string@no#t
 
     const/4 v10, 0x0
 
@@ -1327,12 +1313,12 @@
 
     if-ne v3, v8, :cond_7
 
-    const v5, 0x1040119
+    const v5, #android:string@shutdown_confirm_question#t
 
     goto/16 :goto_2
 
     :cond_7
-    const v5, 0x1040118
+    const v5, #android:string@shutdown_confirm#t
 
     goto/16 :goto_2
 
@@ -1341,7 +1327,7 @@
     .restart local v5    # "resourceId":I
     .restart local v7    # "uiContext":Landroid/content/Context;
     :cond_8
-    const v4, 0x10405ee
+    const v4, #android:string@shutdown_dialog_shutdown#t
 
     goto :goto_3
 

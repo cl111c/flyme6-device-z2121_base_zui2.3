@@ -325,4 +325,5 @@
     <attr name="datePickerDialogXLayout" format="reference" />
     <attr name="progressBarStyleSS" format="reference" />
     <attr name="inLineEditTextPreferenceStyle" format="reference" />
+    <attr name="needAccessControl" format="boolean" />
 </resources>
